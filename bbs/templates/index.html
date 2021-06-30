@@ -11,7 +11,11 @@
                     </span>
                 </p>
                 <p class="index-content">
-                    {{ msg.body | seigen }}...
+                    {% if msg.body | len >= 30: %}
+                        {{ msg.body | seigen }}...
+                    {% else: %}
+                        {{ msg.body }}
+                    {% endif %}
                 </p>
                 <p class="ctrl"><a href="/edit/{{msg.id}}">編集</a>｜<a href="/delete/{{msg.id}}">削除</a></p>
             </div>

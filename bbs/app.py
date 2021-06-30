@@ -5,6 +5,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
+@app.template_filter('len')
+def seigen_filter(s):
+    return len(s)
+
 @app.template_filter('seigen')
 def seigen_filter(s):
     return str(s)[:30]
