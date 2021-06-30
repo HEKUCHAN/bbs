@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  width: 100%;
+  height: 58px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #ddd;
+}
+header .logo {
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+  margin: 8px 0 0 20px;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+}
+header .nav a {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 17px 20px;
+  font-weight: bolder;
+  color: blue;
+}
+header .nav a:hover {
+  background-color: #c8c8c8;
+}
+header .nav a:hover {
+  transition: color 0.5s;
+  color: red;
+}
+
+main {
+  width: 1098px;
+  background-color: white;
+  margin: 50px auto;
+}
+main .case {
+  width: 100%;
+  height: 100px;
+  border-bottom: 0.5px solid #ddd;
+}
+main .case .title {
+  padding: 8px 0 0 8px;
+}
+main .case .title a {
+  font-weight: bolder;
+}
+main .case .title .date {
+  font-size: 80%;
+  color: #8b8b8b;
+}
+main .case .index-content {
+  padding: 7px 12px;
+}
+main .case .ctrl {
+  padding-left: 20px;
+}
+
+.show-case {
+  width: 1058px;
+  background-color: white;
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.show-case h1 {
+  padding-left: 30px;
+  border-bottom: 0.5px solid black;
+}
+.show-case .date {
+  padding: 8px;
+  color: gray;
+}
+.show-case .msg {
+  padding: 0 20px;
+  max-width: 1058px;
+  word-wrap: break-word;
+}
+.show-case .ctrl {
+  padding: 10px !important;
+}
+
+.new-case {
+  width: 1058px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.new-case h1 {
+  margin-left: 20px;
+  border-bottom: 0.5px solid black;
+}
+.new-case label {
+  font-size: 120%;
+  margin: 0 30px;
+}
+.new-case input,
+.new-case button,
+.new-case textarea {
+  margin-left: 30px;
+  padding: 10px;
+}
+.new-case input {
+  width: 300px !important;
+}
+.new-case button {
+  padding: 10px;
+}
+
+.edit-case {
+  width: 1058px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.edit-case h1 {
+  margin-left: 20px;
+  border-bottom: 0.5px solid black;
+}
+.edit-case label {
+  font-size: 120%;
+  margin: 0 30px;
+}
+.edit-case input,
+.edit-case button,
+.edit-case textarea {
+  margin-left: 30px;
+  padding: 10px;
+}
+.edit-case input {
+  width: 300px !important;
+}
+.edit-case button {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

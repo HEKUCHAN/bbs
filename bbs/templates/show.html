@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block body %}
+    {% include "header.html" %}
+    <div class="show-case">
+        <h1> {{ message.title }}</h1>
+        <span class="date">
+            {{ message.date | cutDate }}
+        </span>
+        {% for m in message.body.split('\n'): %}
+            <p class="msg">{{ m }}</p>
+        {% endfor %}
+        <p class="ctrl">
+            <a href="/">一覧に戻る</a>｜<a href="/edit/{{message.id}}">編集</a>｜<a href="/delete/{{message.id}}">削除</a>
+        </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block body %}
+    {% include "header.html" %}
+    <main>
+        {% for msg in messages | reverse %}
+            <div class="case">
+                <p class="title">
+                    <a href='posts/{{ msg.id }}'>{{ msg.title }}</a>
+                    <span class="date">
+                        {{ msg.date | cutDate }}
+                    </span>
+                </p>
+                <p class="index-content">
+                    {{ msg.body | seigen }}...
+                </p>
+                <p class="ctrl"><a href="/edit/{{msg.id}}">編集</a>｜<a href="/delete/{{msg.id}}">削除</a></p>
+            </div>
+        {% endfor %}
+    </main>
+{% endblock %}
